@@ -1,0 +1,22 @@
+.textArea {
+  resize: none;
+  width: 15em;
+  height: 1.2em;
+  font-size: 2em;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+  background-color: #282c34;
+  border: solid #4883db;
+  border-radius: 4px;
+  color: #d3d3d3;
+}
+
+.textArea:focus {
+  outline: none;
+}
+
+.submitButton {
+  height: 30px;
+  width: 30px;
+}
