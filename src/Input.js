@@ -1,17 +1,15 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./Input.css";
 
-export default function Input() {
-  const [postContent, setPostContent] = useState("");
-  function enterHandler(e) {
-    if (e.keyCode === 13 && e.shiftKey === false) {
-      e.preventDefault();
-      console.log("submitted: " + postContent);
-    }
-  }
-
+export default function Input({
+  postContent,
+  enterHandler,
+  setPostContent,
+  inputRef,
+}) {
   return (
     <textarea
+      ref={inputRef}
       value={postContent}
       className="textArea"
       autoFocus

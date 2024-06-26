@@ -1,11 +1,9 @@
 .textArea {
   resize: none;
-  width: 15em;
+  width: 35%;
   height: 1.2em;
   font-size: 2em;
   display: block;
-  margin: auto;
-  margin-top: 20%;
   background-color: #282c34;
   border: solid #4883db;
   border-radius: 4px;
@@ -20,3 +18,18 @@
   height: 30px;
   width: 30px;
 }
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .textArea {
+    animation: App-logo-spin infinite 0.1s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
