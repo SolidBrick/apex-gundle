@@ -9,7 +9,10 @@ export default function App() {
   const [postContent, setPostContent] = useState("");
   const inputRef = useRef(null);
   const possibleMatches = postContent
-    ? DATA.map((str) => [str, str.search(postContent.toLowerCase())])
+    ? DATA.map((str) => [
+        str,
+        str.toLowerCase().search(postContent.toLowerCase()),
+      ])
         .filter((tuple) => tuple[1] !== -1)
         .sort((a, b) => a[1] - b[1])
         .map((tuple) => tuple[0])
