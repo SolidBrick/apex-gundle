@@ -1,11 +1,11 @@
 .textArea {
   resize: none;
-  width: 35%;
+  width: fill-available;
   height: 1.2em;
   font-size: 2em;
   display: block;
   background-color: #282c34;
-  border: solid #4883db;
+  border: solid #4883db 2px;
   border-radius: 4px;
   color: #d3d3d3;
 }

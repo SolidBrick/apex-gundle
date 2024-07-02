@@ -27,9 +27,18 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.Rapper {
-  margin-left: 40%;
-  margin-top: 20%;
+.Wrapper0 {
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.Wrapper1 {
+  display: flex;
+  justify-content: center;
+  width: 25%;
 }
 
 .App-link {

@@ -1,6 +1,6 @@
 // SOME OF THE KEYS OF THE GUN DATA ARE NOT STRINGS WHILE OTHERS ARE BC OF PRETTIER EXTENSION
 
-export const DATA = [
+export const NAMEDATA = [
   "30-30 Repeater",
   "Alternator SMG",
   "Bocek Compound Bow",
@@ -8,7 +8,7 @@ export const DATA = [
   "Charge Rifle",
   "Devotion LMG",
   "EVA-8 Auto",
-  "G7 scout",
+  "G7 Scout",
   "Havoc Rifle",
   "Hemlok Burst AR",
   "Kraber .50-Cal Sniper",
@@ -265,7 +265,7 @@ export const GUNDATA = {
     damagePerSecond: 72,
     firingMode: ["Single"]
   }, */
-  "VK-47Flatline": {
+  "VK-47 Flatline": {
     ammoType: ["Heavy"],
     weaponClass: "Assault Rifle",
     releaseDate: 0,
@@ -273,7 +273,7 @@ export const GUNDATA = {
     damagePerSecond: 180,
     firingMode: ["Auto", "Single"],
   },
-  VoltSMG: {
+  "Volt SMG": {
     ammoType: ["Energy"],
     weaponClass: "SMG",
     releaseDate: 6,

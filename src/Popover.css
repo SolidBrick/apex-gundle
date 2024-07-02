@@ -1,20 +1,22 @@
-li {
-  margin: auto;
-  color: #d3d3d3;
-  list-style-type: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  border: #363e4d solid 1px;
-}
-li:hover {
-  background-color: #5e6777;
-}
 .menuContainer {
+  li {
+    margin: auto;
+    color: #d3d3d3;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: #363e4d solid 1px;
+  }
+  li:hover {
+    background-color: #5e6777;
+  }
+  margin-top: 50px;
+  position: absolute;
+  border-radius: 4px;
+  width: inherit;
   border: #d3d3d3 solid 2px;
-  width: 35.5%;
   font-size: 1em;
-  margin-top: 2%;
   max-height: 300px;
   overflow-y: auto;
   background-color: #3f4550;
