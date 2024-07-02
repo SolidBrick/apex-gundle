@@ -27,8 +27,13 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.title {
+  color: #d3d3d3;
+  font-size: 72px;
+  margin-bottom: 50px;
+}
 .Wrapper0 {
-  margin-top: 15%;
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

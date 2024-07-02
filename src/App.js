@@ -38,6 +38,7 @@ export default function App() {
   console.log(submittedNames);
   return (
     <div className="Wrapper0">
+      <h1 className="title">Apex Gundle</h1>
       <div className="Wrapper1">
         <TextBox
           postContent={postContent}
