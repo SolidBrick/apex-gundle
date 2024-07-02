@@ -1,3 +1,5 @@
+// SOME OF THE KEYS OF THE GUN DATA ARE NOT STRINGS WHILE OTHERS ARE BC OF PRETTIER EXTENSION
+
 export const DATA = [
   "30-30 Repeater",
   "Alternator SMG",
@@ -104,7 +106,7 @@ export const GUNDATA = {
   "Havoc Rifle": {
     ammoType: ["Energy"],
     weaponClass: "Assault Rifle",
-    releaseDate139,
+    releaseDate: 1,
     attachments: ["Extended Magazine", "Standard Stock", "Hop-up"],
     damagePerSecond: 202,
     firingMode: ["Auto"],
@@ -263,7 +265,7 @@ export const GUNDATA = {
     damagePerSecond: 72,
     firingMode: ["Single"]
   }, */
-  "VK-47 Flatline": {
+  "VK-47Flatline": {
     ammoType: ["Heavy"],
     weaponClass: "Assault Rifle",
     releaseDate: 0,
@@ -271,7 +273,7 @@ export const GUNDATA = {
     damagePerSecond: 180,
     firingMode: ["Auto", "Single"],
   },
-  "Volt SMG": {
+  VoltSMG: {
     ammoType: ["Energy"],
     weaponClass: "SMG",
     releaseDate: 6,
