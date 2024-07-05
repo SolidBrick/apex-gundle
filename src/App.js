@@ -6,11 +6,12 @@ import ResultsTable from "./ResultsTable.js";
 import { useState, useRef } from "react";
 
 export default function App() {
+  const [secretGun, setSecretGun] = useState(NAMEDATA[Math.floor(Math.random() * NAMEDATA.length)]);
   const [submittedNames, setSubmittedNames] = useState([]);
   const [postContent, setPostContent] = useState("");
   const inputRef = useRef(null);
-  const possibleMatches = postContent
-    ? NAMEDATA.map((str) => [
+  const [inputFocused, setInputFocused] = useState(true);
+  const possibleMatches = postContent ? NAMEDATA.map((str) => [
         str,
         str.toLowerCase().indexOf(postContent.toLowerCase()),
       ])
@@ -19,6 +20,8 @@ export default function App() {
         .map((tuple) => tuple[0])
         .filter((str) => !submittedNames.includes(str))
     : [];
+  console.log(secretGun);
+  // console.log(GUNDATA[secretGun]);
   function listClickHandler(name) {
     // alert(possibleMatches[0]);
     setSubmittedNames([...submittedNames, name]);
@@ -35,6 +38,12 @@ export default function App() {
       }
     }
   }
+  function onInputFocusHandler() {
+    setInputFocused(true);
+  }
+  function onInputBlurHandler() {
+    setInputFocused(false)
+  }
   console.log(submittedNames);
   return (
     <div className="Wrapper0">
@@ -45,15 +54,17 @@ export default function App() {
           enterHandler={enterHandler}
           setPostContent={setPostContent}
           inputRef={inputRef}
+          onInputBlurHandler={onInputBlurHandler}
+          onInputFocusHandler={onInputFocusHandler}
         />
-        {possibleMatches.length > 0 && (
+        {possibleMatches.length > 0 && inputFocused && (
           <Popover
             possibleMatches={possibleMatches}
             onListClick={listClickHandler}
           />
         )}
       </div>
-      <ResultsTable submittedNames={submittedNames} GUNDATA={GUNDATA} />
+      <ResultsTable submittedNames={submittedNames} GUNDATA={GUNDATA} secretGunData={GUNDATA[secretGun]}/>
     </div>
   );
 }

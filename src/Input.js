@@ -6,6 +6,8 @@ export default function Input({
   enterHandler,
   setPostContent,
   inputRef,
+  onInputBlurHandler,
+  onInputFocusHandler
 }) {
   return (
     <textarea
@@ -17,6 +19,8 @@ export default function Input({
       onChange={(e) => setPostContent(e.target.value)}
       placeholder="Type your input here"
       onKeyDown={enterHandler}
+      onBlur={onInputBlurHandler}
+      onFocus={onInputFocusHandler}
     />
   );
 }
