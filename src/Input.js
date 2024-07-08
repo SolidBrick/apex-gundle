@@ -7,7 +7,7 @@ export default function Input({
   setPostContent,
   inputRef,
   onInputBlurHandler,
-  onInputFocusHandler
+  //onInputFocusHandler
 }) {
   return (
     <textarea
@@ -20,7 +20,7 @@ export default function Input({
       placeholder="Type your input here"
       onKeyDown={enterHandler}
       onBlur={onInputBlurHandler}
-      onFocus={onInputFocusHandler}
+      //onFocus={onInputFocusHandler}
     />
   );
 }

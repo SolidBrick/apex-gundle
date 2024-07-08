@@ -10,14 +10,33 @@ export default function ResultsTable({
     }
     return list.map((item) => <li key={item}>{item}</li>);
   }
+  function checkMatching(curList, secretList) {
+    let matches = 0;
+    for (const ele of curList) {
+      if (secretList.includes(ele)) {
+        matches++;
+      }
+    }
+    if (matches === secretList.length && curList.length === secretList.length) {
+      return "all";
+    } else if (matches === 0) {
+      return "none";
+    } else {
+      return "partial";
+    }
+  }
 
   const trArray = submittedNames
     .slice()
     .reverse()
-    .map((name) => (
-      <tr key={name}>
+    .map((name) => {
+      const ammoMatch = checkMatching(GUNDATA[name].ammoType, secretGunData.ammoType);
+      const attachmentMatch = checkMatching(GUNDATA[name].attachments, secretGunData.attachments);
+      const firingModeMatch = checkMatching(GUNDATA[name].firingMode, secretGunData.firingMode);
+      console.log(ammoMatch, attachmentMatch, firingModeMatch);
+      return (<tr key={name}>
         <td>{name}</td>
-        <td>{formatList(GUNDATA[name].ammoType)}</td>
+        <td style={{backgroundColor: ammoMatch === "all" ? "rgba(0, 255, 0, 0.59)" : ammoMatch === "none" ? "rgba(255, 0, 0, 0.59)" : "rgba(219, 132, 13, 0.59)"}}>{formatList(GUNDATA[name].ammoType)}</td>
         <td
           style={{
             backgroundColor:
@@ -39,6 +58,7 @@ export default function ResultsTable({
         <td
           style={{
             fontSize: GUNDATA[name].attachments.length > 2 ? "85%" : "100%",
+            backgroundColor: attachmentMatch === "all" ? "rgba(0, 255, 0, 0.59)" : attachmentMatch === "none" ? "rgba(255, 0, 0, 0.59)" : "rgba(219, 132, 13, 0.59)"
           }}
         >
           {formatList(GUNDATA[name].attachments)}
@@ -51,9 +71,9 @@ export default function ResultsTable({
                 : "rgba(255, 0, 0, 0.59)",
           }}
         >{GUNDATA[name].damagePerSecond}</td>
-        <td>{formatList(GUNDATA[name].firingMode)}</td>
-      </tr>
-    ));
+        <td style={{backgroundColor: firingModeMatch === "all" ? "rgba(0, 255, 0, 0.59)" : firingModeMatch === "none" ? "rgba(255, 0, 0, 0.59)" : "rgba(219, 132, 13, 0.59)"}}>{formatList(GUNDATA[name].firingMode)}</td>
+      </tr>);
+    });
   return (
     <table className="ResultsTable">
       <tr className="TableHeader">

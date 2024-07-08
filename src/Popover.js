@@ -1,7 +1,7 @@
 import "./Popover.css";
-export default function Popover({ possibleMatches, onListClick }) {
+export default function Popover({ possibleMatches, listClickHandler}) {
   const liArray = possibleMatches.map((name) => (
-    <li onClick={() => onListClick(name)}>
+    <li onClick={() => listClickHandler(name)}>
       {name.charAt(0).toUpperCase() + name.substring(1)}{" "}
     </li>
   ));

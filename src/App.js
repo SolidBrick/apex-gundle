@@ -23,10 +23,11 @@ export default function App() {
   console.log(secretGun);
   // console.log(GUNDATA[secretGun]);
   function listClickHandler(name) {
-    // alert(possibleMatches[0]);
+    alert(possibleMatches[0]);
     setSubmittedNames([...submittedNames, name]);
     setPostContent("");
-    inputRef.current.focus();
+    //inputRef.current.focus();
+    //setInputFocused(true);
   }
   function enterHandler(e) {
     if (e.keyCode === 13) {
@@ -44,7 +45,6 @@ export default function App() {
   function onInputBlurHandler() {
     setInputFocused(false)
   }
-  console.log(submittedNames);
   return (
     <div className="Wrapper0">
       <h1 className="title">Apex Gundle</h1>
@@ -55,7 +55,7 @@ export default function App() {
           setPostContent={setPostContent}
           inputRef={inputRef}
           onInputBlurHandler={onInputBlurHandler}
-          onInputFocusHandler={onInputFocusHandler}
+          //onInputFocusHandler={onInputFocusHandler}
         />
         {possibleMatches.length > 0 && inputFocused && (
           <Popover
