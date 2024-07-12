@@ -1,8 +1,9 @@
 import "./ResultsTable.css";
 export default function ResultsTable({
-  submittedNames,
-  GUNDATA,
+  submittedNames, GUNDATA,
   secretGunData,
+  secretGun,
+  setGameWon
 }) {
   function formatList(list) {
     if (list.length === 0) {
@@ -33,7 +34,9 @@ export default function ResultsTable({
       const ammoMatch = checkMatching(GUNDATA[name].ammoType, secretGunData.ammoType);
       const attachmentMatch = checkMatching(GUNDATA[name].attachments, secretGunData.attachments);
       const firingModeMatch = checkMatching(GUNDATA[name].firingMode, secretGunData.firingMode);
-      console.log(ammoMatch, attachmentMatch, firingModeMatch);
+      if (submittedNames.includes(secretGun)) {
+        setGameWon(true);
+      }
       return (<tr key={name}>
         <td>{name}</td>
         <td style={{backgroundColor: ammoMatch === "all" ? "rgba(0, 255, 0, 0.59)" : ammoMatch === "none" ? "rgba(255, 0, 0, 0.59)" : "rgba(219, 132, 13, 0.59)"}}>{formatList(GUNDATA[name].ammoType)}</td>
@@ -54,7 +57,7 @@ export default function ResultsTable({
                 ? "rgba(0, 255, 0, 0.59)"
                 : "rgba(255, 0, 0, 0.59)",
           }}
-        >Season {GUNDATA[name].releaseDate}</td>
+        >Season {GUNDATA[name].releaseDate} {secretGunData.releaseDate > GUNDATA[name].releaseDate ? "↑" : secretGunData.releaseDate < GUNDATA[name].releaseDate ? "↓" : ""}</td>
         <td
           style={{
             fontSize: GUNDATA[name].attachments.length > 2 ? "85%" : "100%",
@@ -70,7 +73,7 @@ export default function ResultsTable({
                 ? "rgba(0, 255, 0, 0.59)"
                 : "rgba(255, 0, 0, 0.59)",
           }}
-        >{GUNDATA[name].damagePerSecond}</td>
+        >{GUNDATA[name].damagePerSecond} {secretGunData.damagePerSecond> GUNDATA[name].damagePerSecond? "↑" : secretGunData.damagePerSecond< GUNDATA[name].damagePerSecond ? "↓" : ""}</td>
         <td style={{backgroundColor: firingModeMatch === "all" ? "rgba(0, 255, 0, 0.59)" : firingModeMatch === "none" ? "rgba(255, 0, 0, 0.59)" : "rgba(219, 132, 13, 0.59)"}}>{formatList(GUNDATA[name].firingMode)}</td>
       </tr>);
     });
