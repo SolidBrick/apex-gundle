@@ -46,6 +46,13 @@ body {
   width: 25%;
 }
 
+.winMessage {
+  color: #d3d3d3;
+}
+.gunReveal {
+  color: #d3d3d3;
+}
+
 .App-link {
   color: #61dafb;
 }
