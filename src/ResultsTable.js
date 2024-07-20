@@ -50,8 +50,8 @@ export default function ResultsTable({
       }
       return (
         <tr key={name}>
-          <td>
-            <VoltIcon />
+          <td className="iconCell">
+            {GUNDATA[name].icon}
           </td>
           <td
             style={{
@@ -141,7 +141,7 @@ export default function ResultsTable({
         <th style={{ width: "5em" }}>Weapon Class</th>
         <th style={{ width: "7em" }}>Release Date</th>
         <th style={{ width: "10em" }}>Attachments</th>
-        <th style={{ width: "6em" }}>Damage Per Second</th>
+        <th style={{ width: "5em" }}>Damage Per Second</th>
         <th style={{ width: "5em" }}>Firing Modes</th>
       </tr>
       {trArray}

@@ -59,10 +59,10 @@
     <rdfRDF>
       <ccWork
          rdfAbout="">
-        <dcTitle>Nemesis</dc:title>
+        <dcTitle>Nemesis</dcTitle>
         <dcRights>
           <ccAgent>
-            <dcTitle>Respawn Entertainment</dc:title>
+            <dcTitle>Respawn Entertainment</dcTitle>
           </ccAgent>
         </dcRights>
         <ccLicense

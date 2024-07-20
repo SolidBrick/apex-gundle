@@ -44,7 +44,7 @@
     <rdfRDF>
       <ccWork
          rdfAbout="">
-        <dcFormat>image/svg+xml</dc:format>
+        <dcFormat>image/svg+xml</dcFormat>
         <dcType
            rdfResource="http://purl.org/dc/dcmitype/StillImage" />
         <dcTitle />

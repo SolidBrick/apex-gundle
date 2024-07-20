@@ -66,7 +66,6 @@ export default function App() {
   // }
   return (
     <div className="Wrapper0">
-      <h3>{secretGun}</h3>
       <h1 className="title">Apex Gundle</h1>
       {!gameWon ?
         <div className="Wrapper1">
