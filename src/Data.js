@@ -1,5 +1,35 @@
 // SOME OF THE KEYS OF THE GUN DATA ARE NOT STRINGS WHILE OTHERS ARE BC OF PRETTIER EXTENSION
 
+import { ReactComponent as RepeaterIcon } from "./apex_icons/30-30_Repeater_Icon.svg";
+import { ReactComponent as AlternatorIcon } from "./apex_icons/Alternator_SMG_Icon.svg";
+import { ReactComponent as BocekIcon } from "./apex_icons/Bocek_Compound_Bow_Icon.svg";
+import { ReactComponent as CARIcon } from "./apex_icons/C.A.R._SMG_Icon.svg";
+import { ReactComponent as ChargeIcon } from "./apex_icons/Charge_Rifle_Icon.svg";
+import { ReactComponent as DevotionIcon } from "./apex_icons/Devotion_LMG_Icon.svg";
+import { ReactComponent as EVAIcon } from "./apex_icons/EVA-8_Auto_Icon.svg";
+import { ReactComponent as ScoutIcon } from "./apex_icons/G7_Scout_Icon.svg";
+import { ReactComponent as HAVOCIcon } from "./apex_icons/HAVOC_Rifle_Icon.svg";
+import { ReactComponent as HemlokIcon } from "./apex_icons/Hemlok_Burst_AR_Icon.svg";
+import { ReactComponent as KraberIcon } from "./apex_icons/Kraber_.50-Cal_Sniper_Icon.svg";
+import { ReactComponent as LSTARIcon } from "./apex_icons/L-STAR_EMG_Icon.svg";
+import { ReactComponent as LongbowIcon } from "./apex_icons/Longbow_DMR_Icon.svg";
+import { ReactComponent as SpitfireIcon } from "./apex_icons/M600_Spitfire_Icon.svg";
+import { ReactComponent as MastiffIcon } from "./apex_icons/Mastiff_Shotgun_Icon.svg";
+import { ReactComponent as MozambiqueIcon } from "./apex_icons/Mozambique_Shotgun_Icon.svg";
+import { ReactComponent as NemesisIcon } from "./apex_icons/Nemesis_Burst_AR_Icon.svg";
+import { ReactComponent as P2020Icon } from "./apex_icons/P2020_Icon.svg";
+import { ReactComponent as PeacekeeperIcon } from "./apex_icons/Peacekeeper_Icon.svg";
+import { ReactComponent as ProwlerIcon } from "./apex_icons/Prowler_Burst_PDW_Icon.svg";
+import { ReactComponent as R99Icon } from "./apex_icons/R-99_SMG_Icon.svg";
+import { ReactComponent as R301Icon } from "./apex_icons/R-301_Carbine_Icon.svg";
+import { ReactComponent as RampageIcon } from "./apex_icons/Rampage_LMG_Icon.svg";
+import { ReactComponent as Re45Icon } from "./apex_icons/Re-45_Auto_Icon.svg";
+import { ReactComponent as SentinelIcon } from "./apex_icons/Sentinel_Icon.svg";
+import { ReactComponent as Tripe_TakeIcon } from "./apex_icons/Triple_Take_Icon.svg";
+import { ReactComponent as FlatlineIcon } from "./apex_icons/VK-47_Flatline_Icon.svg";
+import { ReactComponent as VoltIcon } from "./apex_icons/Volt_SMG_Icon.svg";
+import { ReactComponent as WingmanIcon } from "./apex_icons/Wingman_Icon.svg";
+
 export const NAMEDATA = [
   "30-30 Repeater",
   "Alternator SMG",

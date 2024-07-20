@@ -1,4 +1,5 @@
 import "./ResultsTable.css";
+import { ReactComponent as VoltIcon } from "./apex_icons/Volt_SMG_Icon.svg";
 export default function ResultsTable({
   submittedNames,
   GUNDATA,
@@ -50,8 +51,7 @@ export default function ResultsTable({
       return (
         <tr key={name}>
           <td>
-            {name}
-            <img src="https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/7/7a/Sentinel_Icon.svg/revision/latest?cb=20230201232542" />
+            <VoltIcon />
           </td>
           <td
             style={{
