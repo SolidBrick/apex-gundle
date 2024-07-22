@@ -50,9 +50,7 @@ export default function ResultsTable({
       }
       return (
         <tr key={name}>
-          <td className="iconCell">
-            {GUNDATA[name].icon}
-          </td>
+          <td className="iconCell">{GUNDATA[name].icon}</td>
           <td
             style={{
               backgroundColor:
@@ -136,7 +134,7 @@ export default function ResultsTable({
   return (
     <table className="ResultsTable">
       <tr className="TableHeader">
-        <th style={{ width: "6em" }}>Gun</th>
+        <th style={{ width: "174px" }}>Gun</th>
         <th style={{ width: "5em" }}>Ammo Type</th>
         <th style={{ width: "5em" }}>Weapon Class</th>
         <th style={{ width: "7em" }}>Release Date</th>
