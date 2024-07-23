@@ -1,11 +1,12 @@
+import { useState, useRef, useEffect } from "react";
+import Rand, { PRNG } from "rand-seed";
+import Cookies from "js-cookie";
+import ReactGA from "react-ga4";
 import "./App.css";
 import TextBox from "./Input.js";
 import Popover from "./Popover.js";
 import { NAMEDATA, GUNDATA } from "./Data.js";
 import ResultsTable from "./ResultsTable.js";
-import { useState, useRef, useEffect } from "react";
-import Rand, { PRNG } from "rand-seed";
-import Cookies from "js-cookie";
 
 export default function App() {
   const today = new Date();
@@ -28,6 +29,7 @@ export default function App() {
         .map((tuple) => tuple[0])
         .filter((str) => !submittedNames.includes(str))
     : [];
+  ReactGA.initialize("G-8BEZJ2Z0P8");
 
   useEffect(() => {
     for (
