@@ -133,16 +133,18 @@ export default function ResultsTable({
     });
   return (
     <table className="ResultsTable">
-      <tr className="TableHeader">
-        <th style={{ width: "174px" }}>Gun</th>
-        <th style={{ width: "5em" }}>Ammo Type</th>
-        <th style={{ width: "5em" }}>Weapon Class</th>
-        <th style={{ width: "7em" }}>Release Date</th>
-        <th style={{ width: "10em" }}>Attachments</th>
-        <th style={{ width: "5em" }}>Damage Per Second</th>
-        <th style={{ width: "5em" }}>Firing Modes</th>
-      </tr>
-      {trArray}
+      <tbody>
+        <tr className="TableHeader">
+          <th style={{ width: "174px" }}>Gun</th>
+          <th style={{ width: "5em" }}>Ammo Type</th>
+          <th style={{ width: "5em" }}>Weapon Class</th>
+          <th style={{ width: "7em" }}>Release Date</th>
+          <th style={{ width: "10em" }}>Attachments</th>
+          <th style={{ width: "5em" }}>Damage Per Second</th>
+          <th style={{ width: "5em" }}>Firing Modes</th>
+        </tr>
+        {trArray}
+      </tbody>
     </table>
   );
 }

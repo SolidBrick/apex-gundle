@@ -51,6 +51,14 @@ body {
 }
 .gunReveal {
   color: #d3d3d3;
+  margin: 5px;
+}
+.numGuessText {
+  color: #d3d3d3;
+}
+.winNumGuessText {
+  color: #d3d3d3;
+  margin: 5px;
 }
 
 .App-link {
