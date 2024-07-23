@@ -30,7 +30,11 @@ export default function App() {
         .filter((str) => !submittedNames.includes(str))
     : [];
   ReactGA.initialize("G-8BEZJ2Z0P8");
-
+  ReactGA.send({
+    hitType: "pageview",
+    page: "/",
+    title: "Apex Gundle",
+  });
   useEffect(() => {
     for (
       let i = 0;
