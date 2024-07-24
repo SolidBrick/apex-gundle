@@ -7,10 +7,14 @@ import TextBox from "./Input.js";
 import Popover from "./Popover.js";
 import { NAMEDATA, GUNDATA } from "./Data.js";
 import ResultsTable from "./ResultsTable.js";
+import Timer from "./Timer.js";
 
 export default function App() {
-  const today = new Date();
-  const nextMidnight = Math.floor(today.getTime / 86400000) + 86400000;
+  const [now, setNow] = useState(new Date());
+  const nextMidnight = new Date(
+    Math.floor(now.getTime() / 86400000) * 86400000 + 86400000
+  );
+
   const rand = new Rand("seed");
   const [clickedList, setClickedList] = useState(false);
   const [gameWon, setGameWon] = useState(false);
@@ -35,10 +39,11 @@ export default function App() {
     page: "/",
     title: "Apex Gundle",
   });
+
   useEffect(() => {
     for (
       let i = 0;
-      i < Math.floor((today.getTime() - 1720670400000) / 86400000);
+      i < Math.floor((now.getTime() - 1720670400000) / 86400000);
       i++
     ) {
       rand.next();
@@ -132,6 +137,7 @@ export default function App() {
             {submittedNames.length > 1 ? "guesses" : "guess"}
           </h3>
           <h3 className="gunReveal"> The gun was {secretGun}</h3>
+          <Timer now={now} setNow={setNow} nextMidnight={nextMidnight} />
         </>
       )}
       <ResultsTable

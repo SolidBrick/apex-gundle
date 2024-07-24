@@ -31,9 +31,14 @@ body {
   color: #d3d3d3;
   font-size: 72px;
   margin-bottom: 50px;
+  text-align: center;
+  font-size: 500%;
 }
 .Wrapper0 {
   margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 844px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -43,7 +48,6 @@ body {
 .Wrapper1 {
   display: flex;
   justify-content: center;
-  width: 25%;
 }
 
 .winMessage {

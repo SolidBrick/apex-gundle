@@ -8,7 +8,7 @@ export default function Input({
   inputRef,
   // onMouseUpHandler,
   onInputBlurHandler,
-  onInputFocusHandler
+  onInputFocusHandler,
 }) {
   return (
     <textarea
@@ -18,7 +18,7 @@ export default function Input({
       autoFocus
       maxLength={20}
       onChange={(e) => setPostContent(e.target.value)}
-      placeholder="Type your input here"
+      placeholder="Type your guess here"
       onKeyDown={enterHandler}
       onBlur={onInputBlurHandler}
       onFocus={onInputFocusHandler}
