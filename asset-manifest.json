@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apex-gundle/static/css/main.f2109c64.css",
-    "main.js": "/apex-gundle/static/js/main.ed5440d6.js",
+    "main.js": "/apex-gundle/static/js/main.b661f01d.js",
     "static/js/453.d314d246.chunk.js": "/apex-gundle/static/js/453.d314d246.chunk.js",
     "static/media/C.A.R._SMG_Icon.svg": "/apex-gundle/static/media/C.A.R._SMG_Icon.77784bef91b3b40540836483520c5713.svg",
     "static/media/Rampage_LMG_Icon.svg": "/apex-gundle/static/media/Rampage_LMG_Icon.09dde9480f0ae100ce430689e16df8de.svg",
@@ -34,11 +34,11 @@
     "static/media/Mozambique_Shotgun_Icon.svg": "/apex-gundle/static/media/Mozambique_Shotgun_Icon.32df3b2be2fe1fdef365a8f140641970.svg",
     "index.html": "/apex-gundle/index.html",
     "main.f2109c64.css.map": "/apex-gundle/static/css/main.f2109c64.css.map",
-    "main.ed5440d6.js.map": "/apex-gundle/static/js/main.ed5440d6.js.map",
+    "main.b661f01d.js.map": "/apex-gundle/static/js/main.b661f01d.js.map",
     "453.d314d246.chunk.js.map": "/apex-gundle/static/js/453.d314d246.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2109c64.css",
-    "static/js/main.ed5440d6.js"
+    "static/js/main.b661f01d.js"
   ]
 }
