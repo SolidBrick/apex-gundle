@@ -71,21 +71,16 @@ export const GUNDATA = {
     attachments: ["Extended Magazine", "Sniper Stock"],
     damagePerSecond: 90,
     firingMode: ["Single"],
-    icon: <RepeaterIcon style={{width: "100%", height: "100%"}} />
+    icon: <RepeaterIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Alternator SMG": {
     ammoType: ["Light"],
     weaponClass: "SMG",
     releaseDate: 0,
-    attachments: [
-      "Laser Sight",
-      "Extended Magazine",
-      "Standard Stock",
-      "Hop-up",
-    ],
+    attachments: ["Laser Sight", "Extended Magazine", "Standard Stock"],
     damagePerSecond: 160,
     firingMode: ["Auto"],
-    icon: <AlternatorIcon style={{width: "100%", height: "100%"}} />
+    icon: <AlternatorIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Bocek Compound Bow": {
     ammoType: ["Arrow"],
@@ -94,7 +89,7 @@ export const GUNDATA = {
     attachments: [],
     damagePerSecond: 125,
     firingMode: ["Single"],
-    icon: <BocekIcon style={{width: "100%", height: "100%"}} />
+    icon: <BocekIcon style={{ width: "100%", height: "100%" }} />,
   },
   "C.A.R. SMG": {
     ammoType: ["Heavy", "Light"],
@@ -103,7 +98,7 @@ export const GUNDATA = {
     attachments: ["Extended Magazine", "Standard Stock"],
     damagePerSecond: 186,
     firingMode: ["Auto"],
-    icon: <CARIcon style={{width: "100%", height: "100%"}} />
+    icon: <CARIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Charge Rifle": {
     ammoType: ["Sniper"],
@@ -112,7 +107,7 @@ export const GUNDATA = {
     attachments: ["Extended Magazine", "Sniper Stock"],
     damagePerSecond: 48,
     firingMode: ["Single"],
-    icon: <ChargeIcon style={{width: "100%", height: "100%"}} />
+    icon: <ChargeIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Devotion LMG": {
     ammoType: ["Energy"],
@@ -121,16 +116,16 @@ export const GUNDATA = {
     attachments: [],
     damagePerSecond: 240,
     firingMode: ["Auto"],
-    icon: <DevotionIcon style={{width: "100%", height: "100%"}} />
+    icon: <DevotionIcon style={{ width: "100%", height: "100%" }} />,
   },
   "EVA-8 Auto": {
     ammoType: ["Shotgun"],
     weaponClass: "Shotgun",
     releaseDate: 0,
-    attachments: [],
-    damagePerSecond: 144,
+    attachments: ["Shotgun Bolt", "Standard Stock", "Hop-up"],
+    damagePerSecond: 146,
     firingMode: ["Auto"],
-    icon: <EVAIcon style={{width: "100%", height: "100%"}} />
+    icon: <EVAIcon style={{ width: "100%", height: "100%" }} />,
   },
   "G7 Scout": {
     ammoType: ["Light"],
@@ -139,7 +134,7 @@ export const GUNDATA = {
     attachments: ["Barrel Stabilizer", "Extended Magazine", "Sniper Stock"],
     damagePerSecond: 139,
     firingMode: ["Single"],
-    icon: <ScoutIcon style={{width: "100%", height: "100%"}} />
+    icon: <ScoutIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Havoc Rifle": {
     ammoType: ["Energy"],
@@ -148,16 +143,16 @@ export const GUNDATA = {
     attachments: ["Extended Magazine", "Standard Stock", "Hop-up"],
     damagePerSecond: 202,
     firingMode: ["Auto"],
-    icon: <HAVOCIcon style={{width: "100%", height: "100%"}} />
+    icon: <HAVOCIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Hemlok Burst AR": {
     ammoType: ["Heavy"],
     weaponClass: "Assault Rifle",
     releaseDate: 0,
     attachments: ["Barrel Stabilizer", "Extended Magazine", "Standard Stock"],
-    damagePerSecond: 127,
+    damagePerSecond: 116,
     firingMode: ["Burst", "Single"],
-    icon: <HemlokIcon style={{width: "100%", height: "100%"}} />
+    icon: <HemlokIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Kraber .50-Cal Sniper": {
     ammoType: ["Sniper"],
@@ -166,52 +161,57 @@ export const GUNDATA = {
     attachments: [],
     damagePerSecond: 58,
     firingMode: ["Single"],
-    icon: <KraberIcon style={{width: "100%", height: "100%"}} />
+    icon: <KraberIcon style={{ width: "100%", height: "100%" }} />,
   },
   "L-Star EMG": {
     ammoType: ["Energy"],
     weaponClass: "LMG",
     releaseDate: 2,
-    attachments: ["Extended Magazine", "Standard Stock"],
+    attachments: ["Extended Magazine", "Standard Stock", "Hop-up"],
     damagePerSecond: 170,
     firingMode: ["Auto"],
-    icon: <LSTARIcon style={{width: "100%", height: "100%"}} />
+    icon: <LSTARIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Longbow DMR": {
     ammoType: ["Sniper"],
     weaponClass: "Sniper",
     releaseDate: 0,
-    attachments: ["Barrel Stabilizer", "Extended Magazine", "Sniper Stock"],
+    attachments: ["Extended Magazine", "Sniper Stock"],
     damagePerSecond: 72,
     firingMode: ["Single"],
-    icon: <LongbowIcon style={{width: "100%", height: "100%"}} />
+    icon: <LongbowIcon style={{ width: "100%", height: "100%" }} />,
   },
   "M600 Spitfire": {
     ammoType: ["Light"],
     weaponClass: "LMG",
     releaseDate: 0,
-    attachments: ["Barrel Stabilizer", "Extended Magazine", "Standard Stock"],
+    attachments: [
+      "Barrel Stabilizer",
+      "Extended Magazine",
+      "Standard Stock",
+      "Hop-up",
+    ],
     damagePerSecond: 162,
     firingMode: ["Auto"],
-    icon: <SpitfireIcon style={{width: "100%", height: "100%"}} />
+    icon: <SpitfireIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Mastiff Shotgun": {
     ammoType: ["Shotgun"],
     weaponClass: "Shotgun",
     releaseDate: 0,
     attachments: ["Shotgun Bolt", "Standard Stock"],
-    damagePerSecond: 97,
+    damagePerSecond: 99,
     firingMode: ["Single"],
-    icon: <MastiffIcon style={{width: "100%", height: "100%"}} />
+    icon: <MastiffIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Mozambique Shotgun": {
     ammoType: ["Shotgun"],
     weaponClass: "Shotgun",
     releaseDate: 0,
     attachments: ["Shotgun Bolt", "Hop-up"],
-    damagePerSecond: 99,
+    damagePerSecond: 126,
     firingMode: ["Auto"],
-    icon: <MozambiqueIcon style={{width: "100%", height: "100%"}} />
+    icon: <MozambiqueIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Nemesis Burst AR": {
     ammoType: ["Energy"],
@@ -220,30 +220,25 @@ export const GUNDATA = {
     attachments: ["Barrel Stabilizer", "Extended Magazine", "Standard Stock"],
     damagePerSecond: 155,
     firingMode: ["Burst"],
-    icon: <NemesisIcon style={{width: "100%", height: "100%"}} />
+    icon: <NemesisIcon style={{ width: "100%", height: "100%" }} />,
   },
   P2020: {
     ammoType: ["Light"],
     weaponClass: "Pistol",
     releaseDate: 0,
-    attachments: [
-      "Laser Sight",
-      "Extended Magazine",
-      "Standard Stock",
-      "Hop-up",
-    ],
-    damagePerSecond: 126,
+    attachments: ["Laser Sight", "Extended Magazine", "Hop-up"],
+    damagePerSecond: 147,
     firingMode: ["Single"],
-    icon: <P2020Icon style={{width: "100%", height: "100%"}} />
+    icon: <P2020Icon style={{ width: "100%", height: "100%" }} />,
   },
   Peacekeeper: {
     ammoType: ["Shotgun"],
     weaponClass: "Shotgun",
     releaseDate: 0,
-    attachments: ["Shotgun Bolt", "Standard Stock", "Hop-up"],
+    attachments: ["Shotgun Bolt", "Standard Stock"],
     damagePerSecond: 73,
     firingMode: ["Single"],
-    icon: <PeacekeeperIcon style={{width: "100%", height: "100%"}} />
+    icon: <PeacekeeperIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Prowler Burst PDW": {
     ammoType: ["Heavy"],
@@ -252,7 +247,7 @@ export const GUNDATA = {
     attachments: ["Laser Sight", "Extended Magazine", "Standard Stock"],
     damagePerSecond: 145,
     firingMode: ["Burst"],
-    icon: <ProwlerIcon style={{width: "100%", height: "100%"}} />
+    icon: <ProwlerIcon style={{ width: "100%", height: "100%" }} />,
   },
   "R-301 Carbine": {
     ammoType: ["Light"],
@@ -261,39 +256,39 @@ export const GUNDATA = {
     attachments: ["Barrel Stabilizer", "Extended Magazine", "Standard Stock"],
     damagePerSecond: 176,
     firingMode: ["Auto", "Single"],
-    icon: <R301Icon style={{width: "100%", height: "100%"}} />
+    icon: <R301Icon style={{ width: "100%", height: "100%" }} />,
   },
   "R-99 SMG": {
     ammoType: ["Light"],
     weaponClass: "SMG",
     releaseDate: 0,
-    attachments: ["Laser Sight", "Extended Magazine", "Standard Stock"],
-    damagePerSecond: 198,
+    attachments: [],
+    damagePerSecond: 252,
     firingMode: ["Auto"],
-    icon: <R99Icon style={{width: "100%", height: "100%"}} />
+    icon: <R99Icon style={{ width: "100%", height: "100%" }} />,
   },
   "Rampage LMG": {
     ammoType: ["Heavy"],
     weaponClass: "LMG",
     releaseDate: 10,
-    attachments: ["Barrel Stabilizer", "Extended Magazine", "Standard Stock"],
+    attachments: [
+      "Barrel Stabilizer",
+      "Extended Magazine",
+      "Standard Stock",
+      "Hop-up",
+    ],
     damagePerSecond: 130,
     firingMode: ["Auto"],
-    icon: <RampageIcon style={{width: "100%", height: "100%"}} />
+    icon: <RampageIcon style={{ width: "100%", height: "100%" }} />,
   },
   "RE-45 Auto": {
     ammoType: ["Light"],
     weaponClass: "Pistol",
     releaseDate: 0,
-    attachments: [
-      "Laser Sight",
-      "Extended Magazine",
-      "Standard Stock",
-      "Hop-up",
-    ],
+    attachments: ["Laser Sight", "Extended Magazine", "Hop-up"],
     damagePerSecond: 156,
     firingMode: ["Auto"],
-    icon: <RE45Icon style={{width: "100%", height: "100%"}} />
+    icon: <RE45Icon style={{ width: "100%", height: "100%" }} />,
   },
   Sentinel: {
     ammoType: ["Sniper"],
@@ -302,7 +297,7 @@ export const GUNDATA = {
     attachments: ["Extended Magazine", "Sniper Stock"],
     damagePerSecond: 45,
     firingMode: ["Single"],
-    icon: <SentinelIcon style={{width: "100%", height: "100%"}} />
+    icon: <SentinelIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Triple Take": {
     ammoType: ["Energy"],
@@ -311,7 +306,7 @@ export const GUNDATA = {
     attachments: ["Extended Magazine", "Sniper Stock", "Hop-up"],
     damagePerSecond: 85,
     firingMode: ["Single"],
-    icon: <Triple_TakeIcon style={{width: "100%", height: "100%"}} />
+    icon: <Triple_TakeIcon style={{ width: "100%", height: "100%" }} />,
   },
   /*"Throwing Knife" : {
     ammoType: "Knife",
@@ -328,7 +323,7 @@ export const GUNDATA = {
     attachments: ["Extended Magazine", "Standard Stock"],
     damagePerSecond: 180,
     firingMode: ["Auto", "Single"],
-    icon: <FlatlineIcon style={{width: "100%", height: "100%"}} />
+    icon: <FlatlineIcon style={{ width: "100%", height: "100%" }} />,
   },
   "Volt SMG": {
     ammoType: ["Energy"],
@@ -337,7 +332,7 @@ export const GUNDATA = {
     attachments: ["Laser Sight", "Extended Magazine", "Standard Stock"],
     damagePerSecond: 180,
     firingMode: ["Auto"],
-    icon: <VoltIcon style={{width: "100%", height: "100%"}} />
+    icon: <VoltIcon style={{ width: "100%", height: "100%" }} />,
   },
   Wingman: {
     ammoType: ["Sniper"],
@@ -346,6 +341,6 @@ export const GUNDATA = {
     attachments: ["Hop-up"],
     damagePerSecond: 117,
     firingMode: ["Single"],
-    icon: <WingmanIcon style={{width: "100%", height: "100%"}} />
+    icon: <WingmanIcon style={{ width: "100%", height: "100%" }} />,
   },
 };
